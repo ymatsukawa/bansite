@@ -14,4 +14,4 @@ cd {this}
 ```
 
 # LICENSE
-MIT
+MAIT
