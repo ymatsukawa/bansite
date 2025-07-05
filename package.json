@@ -1,9 +1,9 @@
 {
-  "name": "ban-list-extension",
+  "name": "ban-site-extension",
   "version": "1.0.0",
-  "description": "Chrome extension to block specified URLs and show doge icon",
+  "description": "ban specified URLs",
   "scripts": {
-    "build": "./build.sh",
+    "build": "./make.sh",
     "clean": "rm -rf build dist",
     "dev": "echo 'Load unpacked extension from src/ directory in Chrome'",
     "test": "jest",
@@ -18,7 +18,7 @@
     "url-blocker",
     "productivity"
   ],
-  "author": "Your Name",
+  "author": "ymatsukawa",
   "license": "MIT",
   "devDependencies": {
     "jest": "^29.7.0",
