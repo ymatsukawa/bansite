@@ -1,4 +1,4 @@
-# Ban List Chrome Extension
+# Ban Site chrome extension
 
 ```
 cd /path/to/yourlib
