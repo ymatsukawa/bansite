@@ -9,6 +9,7 @@ cd {this}
 # zip will be created at ./dist
 
 # open chrome
+# goto chrome://extensions
 # drop zip
 ```
 
