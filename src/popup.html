@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ban List</title>
+    <style>
+        body {
+            width: 350px;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+        .popup-editor {
+            display: none;
+        }
+        .popup-header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .popup-header h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+        .popup-content {
+            padding: 20px;
+        }
+        .input-section {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .add-btn {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            width: 100%;
+        }
+        .add-btn:hover {
+            background: #45a049;
+        }
+        .url-list {
+            max-height: 200px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            background: #f9f9f9;
+        }
+        .url-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .url-item:last-child {
+            border-bottom: none;
+        }
+        .remove-btn {
+            background: #f44336;
+            color: white;
+            border: none;
+            padding: 4px 8px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .remove-btn:hover {
+            background: #da190b;
+        }
+        .empty-state {
+            text-align: center;
+            color: #666;
+            padding: 20px;
+        }
+        .note {
+            font-size: 12px;
+            color: #999;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading" id="loading">
+        Checking page compatibility...
+    </div>
+    
+    <div class="popup-editor" id="popupEditor">
+        <div class="popup-header">
+            <h3>🚫 Ban List Editor</h3>
+        </div>
+        <div class="popup-content">
+            <div class="input-container"></div>
+            <div class="list-container"></div>
+            <div class="note">
+                URLs will be blocked across all tabs
+            </div>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>

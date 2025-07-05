@@ -1,0 +1,31 @@
+{
+  "name": "ban-list-extension",
+  "version": "1.0.0",
+  "description": "Chrome extension to block specified URLs and show doge icon",
+  "scripts": {
+    "build": "./build.sh",
+    "clean": "rm -rf build dist",
+    "dev": "echo 'Load unpacked extension from src/ directory in Chrome'",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:e2e": "jest --config=jest.e2e.config.js",
+    "test:unit": "jest --config=jest.config.js",
+    "test:all": "npm run test:unit && npm run test:e2e"
+  },
+  "keywords": [
+    "chrome-extension",
+    "url-blocker",
+    "productivity"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "puppeteer": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
